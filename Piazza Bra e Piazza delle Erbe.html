@@ -2,41 +2,42 @@
 <html>
 <head>
     <style>
-       header {
-          background-color: rgb(233, 165, 179);;
-          color: #fff;
-          padding: 20px;
-          text-align: left;
-          width: 100%;
-        }
-        a {
-             color: white; 
-        }
-        nav ul {
-          list-style-type: none;
-          padding: 0;
-        }
-        nav ul li {
-             display: inline;
-             margin-right: 20px;
-        }
-        nav ul li a {
-          color: #fff;
-          text-decoration: none;
-        }
-        section {
-          padding: 20px;
-          margin-bottom: 20px;
-        }
-          footer {
-            background-color: rgb(233, 165, 179);;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            bottom: 0;
-            width: 100%;
-          }</style>
-
-<body>
-</body>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(233, 165, 179);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #f0aaaa;
+  }
+  
+  .active {
+    background-color: #ad8b9b;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul>
+    <li><a class="#index.html" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  </body>
 </html>
