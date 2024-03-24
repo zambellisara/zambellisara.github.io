@@ -7,24 +7,34 @@
       .mySlides {display:none;}
      h1 {text-align: center;}
 /* Navigation */
-header {
-	width: 100%;
-	height: 10%;
-	background-color: rgb(233, 165, 179);
-  position:absolute;
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav ul li {
-     display: inline;
-     margin-right: 20px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(233, 165, 179);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #eccece;
+  }
+  
+  .active {
+    background-color: #bd8888;
+  }
+
 footer {
     background-color: rgb(233, 165, 179);
     color: #fff;
@@ -38,16 +48,11 @@ footer {
 <title>Visita Verona</title>
 </head>
 <body>
-    <!-- Main Container -->
-<div class="container"> 
-  <!-- Navigation -->
-  <header> <a href="index.html">
-   </a>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="#Luoghi da visitare">Visita Verona</a>
-   </nav>
-  </header>
+  <ul>
+    <li><a class="#active" href="index.html">Home</a></li>
+    <li><a href="#Luoghi da visitare">Visita Verona</a></li>
+    <li><a href="#contact">Contatti</a></li>
+  </ul>
 </br>
 </br>
 </br>
