@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-      .mySlides {display:none;}
+    .mySlides {display:none;}
       h1 {text-align: center;}
 /* Navigation */
 ul {
@@ -104,52 +104,37 @@ footer {
 </br>
   <h1><i><b>Luoghi da visitare</b></i></h1>
 </br>
-  <div class="w3-content w3-display-container">
-    <a href="L'ArenadiVerona.html"><img class="mySlides" src="immagini/arenaoriz.jpg" style="width:100%"></a>
-    <a href="PiazzaBraePiazzadelleErbe.html"><img class="mySlides" src="immagini/piazzabra1.jpg" style="width:100%"></a>
-    <a href="LacasadiGiulietta.html"><img class="mySlides" src="immagini/balconerose.jpg" style="width:100%"></a>
-    <a href="Castelvecchio.html"><img class="mySlides" src="immagini/castelvecchionotte.jpg" style="width:100%"></a>
-    <a href="DuomodiVerona.html"><img class="mySlides" src="immagini/duomo.jpg" style="width:100%"></a>
-    <a href="ArcheScaligere.html"><img class="mySlides" src="immagini/arca.jpg" style="width:100%"></a>
-    <a href="LatorredeiLamberti.html"><img class="mySlides" src="immagini/torreorriz.jpg" style="width:100%"></a>
-    <a href="Ilteatroromano.html"><img class="mySlides" src="immagini/teatroromoriz.jpg" style="width:100%"></a>
-    <a href="Panoramica.html"><img class="mySlides" src="immagini/panorama.jpg" style="width:100%"></a>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="immagini/arenaoriz.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/piazzabra1.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/balconerose.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/castelvecchionotte.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/duomo.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/arca.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/torreorriz.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/teatroromoriz.jpg" style="width:100%">
+  <img class="mySlides" src="immagini/panorama.jpg" style="width:100%">
 
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  </div>
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      x[slideIndex-1].style.display = "block";  
-    }
-    </script>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
      </br>
-  <div class="w3-center">
-    <div class="w3-bar w3-border w3-round">
-      <a href="immagini/arenaoriz.jpg" class="w3-bar-item w3-button">&laquo;</a>
-      <a href="immagini/piazzabra1.jpg" class="w3-bar-item w3-button">1</a>
-      <a href="immagini/balconerose.jpg" class="w3-bar-item w3-button">2</a>
-      <a href="immagini/castelvecchionotte.jpg" class="w3-bar-item w3-button">3</a>
-      <a href="immagini/duomo.jpg" class="w3-bar-item w3-button">4</a>
-      <a href="immagini/arca.jpg" class="w3-bar-item w3-button">&raquo;</a>
-    </div>
-    </div>
-    </div>
-     </br>
+    </br>
       <h1><i><b>La storia della città</b></i></h1>
   </br>
 <p>Verona sorse sul colle San Pietro, grazie alle condizioni naturali favorevoli:</p>
