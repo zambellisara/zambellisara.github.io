@@ -129,7 +129,136 @@ font-family: Arial, sans-serif;
 				height: 100%;
 				border-radius: 0;
 			}
+            @media screen and (max-width: 1680px) {
 
+.banner.style1 .content {
+    padding: 5rem 5rem 3rem 5rem ;
+}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+.banner.style1 .content {
+    padding: 4rem 4rem 2rem 4rem ;
+}
+
+}
+
+@media screen and (max-width: 980px) {
+
+.banner.style1 .content {
+    padding: 3.75rem 3rem 1.75rem 3rem ;
+}
+
+}
+
+@media screen and (max-width: 736px) {
+
+.banner.style1 .content {
+    padding: 2.5rem 2rem 0.5rem 2rem ;
+}
+
+}
+
+@media screen and (orientation: portrait) {
+
+.banner.style1 {
+    -moz-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+    .banner.style1 .content {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner.style1 .image {
+        width: 100%;
+        max-width: 100%;
+        height: 45vh;
+    }
+
+}
+
+.banner.style1.fullscreen {
+min-height: 100vh;
+}
+
+@media screen and (orientation: portrait) {
+
+    .banner.style1.fullscreen .content {
+        min-height: 50vh;
+    }
+
+    .banner.style1.fullscreen .image {
+        height: 50vh;
+    }
+
+}
+
+.banner.style1.orient-right {
+-moz-flex-direction: row-reverse;
+-webkit-flex-direction: row-reverse;
+-ms-flex-direction: row-reverse;
+flex-direction: row-reverse;
+}
+
+@media screen and (orientation: portrait) {
+
+    .banner.style1.orient-right {
+        -moz-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+}
+
+.banner.style1.content-align-center {
+text-align: center;
+}
+
+.banner.style1.content-align-right {
+text-align: right;
+}
+
+@media screen and (orientation: portrait) {
+
+    .banner.style1.content-align-right {
+        text-align: center;
+    }
+
+}
+
+.banner.style1.image-position-left .image img {
+-moz-object-position: left;
+-webkit-object-position: left;
+-ms-object-position: left;
+object-position: left;
+}
+
+.banner.style1.image-position-right .image img {
+-moz-object-position: right;
+-webkit-object-position: right;
+-ms-object-position: right;
+object-position: right;
+}
 
       footer {
     background-color: rgb(233, 165, 179);
