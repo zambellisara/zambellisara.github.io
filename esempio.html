@@ -53,40 +53,71 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+}
+* {
+  box-sizing:border-box;
 }
 
-.left {
-  left: 0;
-  background-color: #111;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.right {
-  right: 0;
-  background-color: red;
+.container {
+  padding: 64px;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.row:after {
+  content: "";
+  display: table;
+  clear: both
 }
 
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
 }
 
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
 
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
       footer {
     background-color: rgb(233, 165, 179);
     color: #fff;
@@ -113,29 +144,40 @@ li.dropdown {
   </li>
 </ul>
 </br>
-<h1>Le Arche Scaligere</h1>
-</br>
-
-<div class="split left">
-    <div class="centered">
-      <img src="immagini/arca.jpg">
-      <p>Le arche scaligere, situate nel cuore del centro storico di Verona, a pochi metri dalla piazza dei Signori,</br> 
-        sono un monumentale complesso funerario in stile gotico della famiglia degli Scaligeri,</br>
-        destinate a contenere le tombe di alcuni illustri rappresentanti della casata,  tra cui quella </br>
-        del più grande Signore di Verona, Cangrande.</p></p>
+<div style="text-align:center">
+    <h1>Le Arche Scaligere</h1>
+  </div>
+  <!-- Clarity Section -->
+  <div class="container" style="background-color:#f1f1f1">
+    <div class="row">
+      <div class="column-33">
+        <img src="immagini/arca.jpg" alt="App" width="335" height="471">
+      </div>
+      <div class="column-66">
+        <p>Le arche scaligere, situate nel cuore del centro storico di Verona, a pochi metri dalla piazza dei Signori,</br> 
+            sono un monumentale complesso funerario in stile gotico della famiglia degli Scaligeri,</br>
+            destinate a contenere le tombe di alcuni illustri rappresentanti della casata,  tra cui quella </br>
+            del più grande Signore di Verona, Cangrande.</p>
+        <button class="button" style="background-color:red">Read More</button>
+      </div>
     </div>
   </div>
   
-  <div class="split right">
-    <div class="centered">
-      <img src="immagini/simboloscala.jpg">
-      <p>Le arche scaligere, situate nel cuore del centro storico di Verona, a pochi metri dalla piazza dei Signori,</br> 
-        sono un monumentale complesso funerario in stile gotico della famiglia degli Scaligeri,</br>
-        destinate a contenere le tombe di alcuni illustri rappresentanti della casata,  tra cui quella </br>
-        del più grande Signore di Verona, Cangrande.</p></p>
+  <!-- The App Section -->
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <p>Le arche scaligere, situate nel cuore del centro storico di Verona, a pochi metri dalla piazza dei Signori,</br> 
+            sono un monumentale complesso funerario in stile gotico della famiglia degli Scaligeri,</br>
+            destinate a contenere le tombe di alcuni illustri rappresentanti della casata,  tra cui quella </br>
+            del più grande Signore di Verona, Cangrande.</p>
+        <button class="button">Download Application</button>
+      </div>
+      <div class="column-33">
+          <img src="immagini/simboloscala.jpg" width="335" height="471" >
+      </div>
     </div>
   </div>
-
 <footer>
   <p>Copyright 2024 Visita Verona | Tutti i diritti riservati</p>
   </footer> 
