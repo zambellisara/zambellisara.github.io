@@ -67,7 +67,21 @@ li.dropdown {
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.section {
+            width: 100%;
+            float:none;
+            padding: 20px;
+            box-sizing:border-box; /* Per includere il padding nella larghezza */
+            margin-bottom: 20px;
+            height: 300px;
+            text-align: center;
+        }
+        .section:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        .section:nth-child(even) {
+            background-color: #ffeaea;
+        }
 footer {
     background-color: rgb(233, 165, 179);
     color: #fff;
