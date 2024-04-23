@@ -1,67 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+  <meta charset="utf-8"  />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      h1 {text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+        /* Navigation */
+        
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  rgb(233, 165, 179);
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
+li {
   float: left;
-  width: 25%;
-  padding: 10px;
-  overflow:hidden;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column  {
-    width: 50%;
-  }
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffe3e3;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column  {
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  p {  
+  margin: 20px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-color: rgb(233, 165, 179);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-}
+       
 </style>
+<title>La torre dei Lamberti </title>
 </head>
 <body>
-
-<h2>Le Arche Scaligere</h2>
-<p>Resize the browser window to see the responsive effect (the columns will re-arrange its layout from four to two on screens that are less than 900px wide. <b>However</b>, on screens that are less than 600px wide, the columns will stack on top of each other instead of floating next to each other.)</p>
-
-<div class="row">
-  <div class="column" style="background-color:#ffffff;" float="left">
-  <img src="immagini/arca.jpg">
-  </div>
-  <div class="column" style="background-color:#ffffff;" float="right">
-    <p>Le arche scaligere, situate nel cuore del centro storico di Verona, a pochi metri dalla piazza dei Signori,</br> 
-        sono un monumentale complesso funerario in stile gotico della famiglia degli Scaligeri,</br>
-        destinate a contenere le tombe di alcuni illustri rappresentanti della casata,  tra cui quella </br>
-        del più grande Signore di Verona, Cangrande.</p>
-  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Luoghi da visitare</a>
+      <div class="dropdown-content">
+        <a href="L'ArenadiVerona.html">L'Arena di Verona</a>
+        <a href="PiazzaBraePiazzadelle Erbe.html">Piazza Bra e Piazza delle Erbe</a>
+        <a href="LacasadiGiulietta.html">La casa di Giulietta</a>
+        <a href="Castelvecchio.html">Castelvecchio</a>
+        <a href="DuomodiVerona.html">Il Duomo di Verona</a>
+        <a href="ArcheScaligere.html">Arche Scaligere</a>
+        <a href="LatorredeiLamberti.html">La torre dei Lamberti</a>
+        <a href="Ilteatroromano.html">Il teatro romano</a>
+        <a href="Panoramica.html">Punto panoramico</a>
+      </div>
+    </li>
+    <li><a href="Tourorganizzati.html">Tour organizzati</a></li>
+    </ul>
 </br>
-  <div class="column" style="background-color:#ffffff;" float="left">
-    <p>Le arche scaligere, situate nel cuore del centro storico di Verona, a pochi metri dalla piazza dei Signori,</br> 
-        sono un monumentale complesso funerario in stile gotico della famiglia degli Scaligeri,</br>
-        destinate a contenere le tombe di alcuni illustri rappresentanti della casata,  tra cui quella </br>
-        del più grande Signore di Verona, Cangrande.</p>
+<h1>La torre dei Lamberti</h1>
+</br>
+<p>Si tratta di una struttura di epoca medievale che si trova in prossimità della centrale piazza delle Erbe.</br>
+   La costruzione della torre dei Lamberti, appartenuta all'omonima famiglia, si fa risalire al 1172. </p>
+<p>La prima fase romanica corrisponde alla parte di costruzione caratterizzata da una muratura in cui si </br>
+    alternano regolari fasce di mattoni di laterizio e conci di tufo.</br>
+    Nel 1295 vennero installate sulla torre due campane ancora presenti.</br>
+    E' inoltre possibile osservare un orologio che il conte Giovanni Sagramoso decise di collocare a sue spese nel 1798. </p>
+</br>
+</br>
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="immagini/lambertitorre.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Matemwe</h5>
+      </div>
+    </div>
   </div>
-  <div class="column" style="background-color:#ffffff;" float="right">
-  <img src="immagini/simboloscala.jpg">
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="immagini/torrescale.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Uroa</h5>
+      </div>
+    </div>
   </div>
-</div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="immagini/torrepanorama.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Wete</h5>
+      </div>
+    </div>
+  </div>
+</div> 
+</br>
+</br>
+</br>
+  <footer>
+    <p>Copyright 2024 Visita Verona | Tutti i diritti riservati</p>
+    </footer> 
 </body>
 </html>
