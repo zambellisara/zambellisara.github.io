@@ -90,15 +90,71 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
-footer {
-    background-color: rgb(233, 165, 179);
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    bottom: 0;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+footer .footer_column p {
+padding-left: 30px;
+padding-right: 30px;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+line-height: 25px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.button {
+width: 200px;
+margin-top: 40px;
+margin-right: automatic;
+margin-bottom: automatic;
+margin-left: automatic;
+padding-top: 20px;
+padding-right: 10px;
+padding-bottom: 20px;
+padding-left: 10px;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+align-content: medium;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+border: 3px solid #FFFFFF;
+color: #FFFFFF;
+transition: all 0.3 s linear;
+}
+.button a:hover {
+background-color: black;
+color: #ffffff;
+cursor: pointer;
+}
+.direction {
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: rgb(233, 165, 179);
+color: #FFFFFF;
+text-transform: uppercase;
+}
+.footer_banner {
+background-color: rgb(233, 165, 179);
+padding-top: 60px;
+padding-bottom: 60PX;
+margin-bottom: 0px;
+}
+.footer {
+display: inline block;
+}
+.hidden {
+font-size: 30px;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #FFFFFF;
+position: absolute;
+}
+.hero_header {
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:#FFFFFF
+}
     </style>
    <title>Tour organizzati</title>
    <link rel="icon" href="immagini/logo.jpg"/>
@@ -137,8 +193,11 @@ attraverso tour interamente organizzati.</p>
   </div>
 </br>
 </br>
-  <footer>
-    <p>Copyright 2024 Visita Verona | Tutti i diritti riservati</p>
-    </footer> 
+<section class="footer_banner" id="contact">
+  <p class="hero_header">Per non perdere le nuove offerte prenota subio.</p>
+  <div class="button">PRENOTA ORA</div>
+</section>
+<div class="copyright">Copyright 2024 Visita Verona | Tutti i diritti riservati</div>
+</div>
   </body>
   </html>
