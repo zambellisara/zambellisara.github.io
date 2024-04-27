@@ -10,50 +10,65 @@
       }
         /* Navigation */
 
-body {font-family: Arial, Helvetica, sans-serif}
-* {box-sizing: border-box;}
-
-.bg-img {
-  /* The image used */
-  background-image: url("immagini/arena.jpg");
-
-  min-height: 380px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
-
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
-
-/* The navbar */
-.topnav {
+        .topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color:  rgb(233, 165, 179);
 }
 
-/* Navbar links */
-.topnav a {
+.topnav {
   float: left;
-  color: #f2f2f2;
+}
+
+.topnav a, .dropbtn {
+  display: inline-block;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffe3e3;
+}
+
+.topnav.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.bg-img {
+  background-image: url("immagini/arenaoriz.jpg");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
   p {  
@@ -62,24 +77,6 @@ body {font-family: Arial, Helvetica, sans-serif}
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-.button {
-            background-color: rgb(233, 165, 179);;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color:  #ffe3e3;
-        }
 
 footer {
     background-color: rgb(233, 165, 179);
@@ -93,58 +90,38 @@ footer {
        
 </style>
 <title>L'Arena di Verona</title>
+<link rel="icon" href="immagini/logo.jpg"/>
 </head>
 <body>
   <div class="bg-img">
-  <div class="container">
-    <div class="topnav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Luoghi da visitare</a>
-          <div class="dropdown-content">
-            <a href="L'ArenadiVerona.html">L'Arena di Verona</a>
-            <a href="PiazzaBraePiazzadelle Erbe.html">Piazza Bra e Piazza delle Erbe</a>
-            <a href="LacasadiGiulietta.html">La casa di Giulietta</a>
-            <a href="Castelvecchio.html">Castelvecchio</a>
-            <a href="DuomodiVerona.html">Il Duomo di Verona</a>
-            <a href="ArcheScaligere.html">Arche Scaligere</a>
-            <a href="LatorredeiLamberti.html">La torre dei Lamberti</a>
-            <a href="Ilteatroromano.html">Il teatro romano</a>
-            <a href="Panoramica.html">Punto panoramico</a>
-          </div>
-        </li>
-        <li><a href="Tourorganizzati.html">Tour organizzati</a></li>
-        </ul>
-    </div>
+      <div class="topnav">
+ <a href="index.html">Home</a></li>
+    <topnav class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Luoghi da visitare</a>
+      <div class="dropdown-content">
+        <a href="L'ArenadiVerona.html">L'Arena di Verona</a>
+        <a href="PiazzaBraePiazzadelle Erbe.html">Piazza Bra e Piazza delle Erbe</a>
+        <a href="LacasadiGiulietta.html">La casa di Giulietta</a>
+        <a href="Castelvecchio.html">Castelvecchio</a>
+        <a href="DuomodiVerona.html">Il Duomo di Verona</a>
+        <a href="ArcheScaligere.html">Arche Scaligere</a>
+        <a href="LatorredeiLamberti.html">La torre dei Lamberti</a>
+        <a href="Ilteatroromano.html">Il teatro romano</a>
+        <a href="Panoramica.html">Punto panoramico</a>
+      </topnav>
+      </div>
+   <a href="Tourorganizzati.html">Tour organizzati</a>
+      </div>
   </div>
-</div>
-
-   
-  
   </br>
     <h1>L'Arena di Verona</h1>
-   
-    <h4>INDICE</h4>
-    <a href="#La struttura esterna" class="button">La struttura esterna</a>
-    <pre></pre>
-    <a href="#L'Arena" class="button">L'Arena</a>
-<hr>
-<section id="La struttura esterna">
-  <h2>L'Arena</h2>
 <p>L'Arena è un anfiteatro romano situato nel centro storico di Verona.</p>
 <p> Si tratta di uno dei più grandi fabbricati che hanno caratterizzato l'architettura romana ed uno degli </br>
   anfiteatri antichi giunto a noi con il miglior grado di conservazione.</p>
-</section>
 <p>La data a cui risale la sua origine è ancora incerta anche se, come è noto, è stato costruito nell'età romana.</p>
 <p>Durante i mesi estivi ospita il famoso festival lirico areniano, conosciuto anche come Arena di Verona Opera </br>
   Festivalle che mette in scena manifestazioni di musica operistica, le cui stagioni si svolgono dal 1913, </br>
    mentre il resto dell'anno è meta di molti cantanti e musicisti internazionali.</p>
-   <section id="La struttura esterna">
-    <h2>La struttura esterna</h2>
-   <p>L'aspetto del monumento è oggi piuttosto diverso rispetto a quello originale, in particolare per via della mancanza dell'anello esterno, che sarebbe stata la vera facciata monumentale, compito oggi svolto dalla fronte interna. L'unico tratto rimasto in piedi della cinta esterna è la cosiddetta Ala, composta da quattro archi. Questo anello non aveva una funzione importante, ma serviva da facciata monumentale all'opera</p>
-  </section>
   </br>
 </br>
 <div class="w3-row-padding w3-margin-top">
@@ -181,4 +158,6 @@ footer {
     </footer> 
 </body>
 </html>
+
+
 
