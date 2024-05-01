@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
       h1 {text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;}
@@ -77,15 +80,6 @@ body, html {
   position: relative;
 }
 
-.container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
       hr.new4 {
   border: 1px solid rgb(224, 219, 219);
 }
@@ -141,12 +135,14 @@ footer {
 </br>
 </br>
 <div class="container">
-<h3>Indice</h3></br>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Indice</button>
+  <div id="demo" class="collapse">
 <a href="#CULTURA">cultura</a></br>
 <a href="#TERME">terme</a></br>
 <a href="#MUSEI">musei</a></br>
 <a href="#PONTI">ponti</a></br>
 <a href="#ALTRE ATTIVITA">altre attività</a>
+</div>
 </div>
 </br>
 </br>
