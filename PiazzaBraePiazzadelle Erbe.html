@@ -4,9 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
       h1 {text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;}
@@ -64,13 +61,17 @@
   display: block;
 }
 
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+
 .container {
         max-width: 800px;
         margin: 20px auto;
         padding: 20px;
-        background-color: #fff0fa;
+        background-color: #fff;
         border-radius: 10px;
-        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
 body, html {
@@ -121,9 +122,10 @@ footer {
   <body>
     <ul class="navbar">
     <li><a class="#active" href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Luoghi da visitare</a>
-        <ul class="dropdown-menu">
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Luoghi da visitare</a>
+      <div class="dropdown-content">
           <div class="dropdown-content">
           <a href="L'ArenadiVerona.html">L'Arena di Verona</a>
           <a href="PiazzaBraePiazzadelle Erbe.html">Piazza Bra e Piazza delle Erbe</a>
@@ -135,29 +137,23 @@ footer {
           <a href="Ilteatroromano.html">Il teatro romano</a>
           <a href="Panoramica.html">Punto panoramico</a>
     </div>
-    </ul>
   </li>
       <li><a href="Tourorganizzati.html">Tour Organizzati</a>
   </ul>
-  <script>
-    $(document).ready(function(){
-      $('.dropdown-toggle').dropdown();
-    });
-  </script>
   <div class="hero-image"></div>
 </br>
 <h1>Le piazze più suggestive</h1>
 </br>
 </br>
 <div class="container">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Indice</button>
-  <div id="demo" class="collapse">
-  <a href="#CULTURA">cultura</a></br>
-  <a href="#TERME">terme</a></br>
-  <a href="#MUSEI">musei</a></br>
-  <a href="#PONTI">ponti</a></br>
-  <a href="#ALTRE ATTIVITA">altre attività</a>
-  </div>
+<h3>Indice</h3>
+ <ul> 
+  <li><a href="#CULTURA">cultura</a></li>
+  <li><a href="#TERME">terme</a></br></li>
+  <li><a href="#MUSEI">musei</a></br></li>
+  <li><a href="#PONTI">ponti</a></br></li>
+  <li><a href="#ALTRE ATTIVITA">altre attività</a></li>
+</ul>
 </div>
 </br>
 </br>
