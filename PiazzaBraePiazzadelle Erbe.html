@@ -13,7 +13,7 @@
       h1 {text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-        ul {
+        ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,11 +21,11 @@
   background-color:  rgb(233, 165, 179);
 }
 
- li {
+ul.navbar li {
   float: left;
 }
 
-li a, .dropbtn {
+ul.navbar li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -34,15 +34,15 @@ li a, .dropbtn {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+ul.navbar li a:hover, .dropdown:hover .dropbtn {
   background-color: #ffe3e3;
 }
 
-li.dropdown {
+ul.navbar li.dropdown {
   display: inline-block;
 }
 
-.dropdown-content {
+ul.navbar .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -51,7 +51,7 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
+ul.navbar .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -60,11 +60,34 @@ li.dropdown {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+ul.navbar .dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+ul.index-dropdown {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+      }
+
+      ul.index-dropdown li {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      ul.index-dropdown li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      ul.index-dropdown li a:hover {
+        background-color: #f1f1f1;
+      }
 
 .container {
         max-width: 800px;
@@ -121,7 +144,7 @@ footer {
   <link rel="icon" href="immagini/logo.jpg"/>
   </head>
   <body>
-  <ul>
+    <ul class="navbar">
     <li><a class="#active" href="index.html">Home</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Luoghi da visitare</a>
