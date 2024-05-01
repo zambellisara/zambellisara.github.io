@@ -13,7 +13,7 @@
       h1 {text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-        .nav ul {
+        .header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,11 +21,11 @@
   background-color:  rgb(233, 165, 179);
 }
 
-.nav li {
+.header li {
   float: left;
 }
 
-.nav li a, .dropbtn {
+.header li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -34,15 +34,15 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav li a:hover, .dropdown:hover .dropbtn {
+.header li a:hover, .dropdown:hover .dropbtn {
   background-color: #ffe3e3;
 }
 
-.nav li.dropdown {
+.header li.dropdown {
   display: inline-block;
 }
 
-.nav .dropdown-content {
+.header .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -51,7 +51,7 @@
   z-index: 1;
 }
 
-.nav .dropdown-content a {
+.header .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -60,9 +60,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav .dropdown-content a:hover {background-color: #f1f1f1;}
+.header .dropdown-content a:hover {background-color: #f1f1f1;}
 
-.nav .dropdown:hover .dropdown-content {
+.header .dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -120,7 +120,7 @@ footer {
   <link rel="icon" href="immagini/logo.jpg"/>
   </head>
   <body>
-  <nav>
+  <header>
   <ul>
     <li><a class="#active" href="index.html">Home</a></li>
       <li class="dropdown">
@@ -139,7 +139,7 @@ footer {
       </li>
       <li><a href="Tourorganizzati.html">Tour organizzati</a>
   </ul>
-</nav>
+</header>
   <div class="hero-image"></div>
 </br>
 <h1>Le piazze più suggestive</h1>
@@ -148,7 +148,6 @@ footer {
 <div class="container">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Indice</button>
   <div id="demo" class="collapse">
-  <h3></h3></br>
   <a href="#CULTURA">cultura</a></br>
   <a href="#TERME">terme</a></br>
   <a href="#MUSEI">musei</a></br>
