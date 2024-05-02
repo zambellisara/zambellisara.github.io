@@ -67,7 +67,7 @@ ul {
 }
 
 .accordion {
-  background-color: #eee;
+  background-color: #fff0fa;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -80,12 +80,12 @@ ul {
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #fff0fa;
 }
 
 .accordion:after {
   content: '\002B';
-  color: #777;
+  color: #ffffff;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -102,6 +102,10 @@ ul {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+.elemento {
+        display: inline-block;
+    }
 
 body, html {
   height: 100%;
@@ -136,7 +140,7 @@ h2 {
 }
 
 .footer {
-    position: fixed;
+    position:absolute;
     background-color: rgb(233, 165, 179);
     color: #fff;
     text-align: center;
@@ -170,12 +174,10 @@ h2 {
   </li>
       <li><a href="Tourorganizzati.html">Tour organizzati</a>
   </ul>
-  <div class="hero-image"></div>
-
-<h1>Le piazze più suggestive</h1>
-
-
-<button class="accordion">Section 1</button>
+<span class="elemento"><div class="hero-image"></div></span>
+<span class="elemento"><h1>Le piazze più suggestive</h1></span>
+<span class="elemento">
+<button class="accordion">Indice</button>
 <div class="panel">
   <ul>
   <li><a href="#CULTURA">cultura</a></li>
@@ -185,6 +187,7 @@ h2 {
   <li><a href="#ALTRE ATTIVITA">altre attività</a></li>
 </ul>
 </div>
+</span>
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
