@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      h1 {text-align: center;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: #ffe3e3;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+        .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  rgb(233, 165, 179);
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffe3e3;
+}
+
+.navbar li.dropdown {
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar .dropdown-content a:hover {background-color: #f1f1f1;}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+
+.accordion {
+  background-color:#ffe3e3;
+  color: #000000;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin-top: 0%;
+}
+
+.active, .accordion:hover {
+  background-color: #fff0fa;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #fff0fa;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff0fa;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("immagini/panorama.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0%;
+}
+
+      hr.new4 {
+  border: 1px solid rgb(224, 219, 219);
+}
+
+  p {  
+  margin: 20px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {  
+  margin: 20px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+    background-color: rgb(233, 165, 179);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+       
+</style>
+<title>Punto panoramico di Verona</title>
+<link rel="icon" href="immagini/logo.jpg"/>
+</head>
+<body>
+  <ul class="navbar">
+    <li><a class="#active" href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Luoghi da visitare</a>
+      <div class="dropdown-content">
+          <div class="dropdown-content">
+          <a href="L'ArenadiVerona.html">L'Arena di Verona</a>
+          <a href="PiazzaBraePiazzadelle Erbe.html">Piazza Bra e Piazza delle Erbe</a>
+          <a href="LacasadiGiulietta.html">La casa di Giulietta</a>
+          <a href="Castelvecchio.html">Castelvecchio</a>
+          <a href="DuomodiVerona.html">Il Duomo di Verona</a>
+          <a href="ArcheScaligere.html">Arche Scaligere</a>
+          <a href="LatorredeiLamberti.html">La torre dei Lamberti</a>
+          <a href="Ilteatroromano.html">Il teatro romano</a>
+          <a href="IlgiardinodeiGiusti.html">Il giardino dei Giusti</a>
+          <a href="Panoramica.html">Punto panoramico</a>
+    </div>
+  </li>
+      <li><a href="Tourorganizzati.html">Tour organizzati</a>
+  </ul>
+<div class="hero-image"></div>
+<h1>Punto panoramico di Verona</h1>
+<button class="accordion">Indice</button>
+<div class="panel">
+  <ul>
+  <li style="font-size: 20px;"><a href="#Punto Panoramico da Castel San Pietro">Punto Panoramico da Castel San Pietro</a></li>
+  <li style="font-size: 20px;"><a href="#Come arrivarci">Come arrivarci</a></br></li>
+  <li style="font-size: 20px;"><a href="#Cosa si può osservare">Cosa si può osservare</a></br></li>
+</ul>
+</div>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+</br>
+</br>
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+        <section ID="Punto Panoramico da Castel San Pietro">
+            <h2>Punto Panoramico da Castel San Pietro</h2>
+            <p>Uno dei più conosciuti e meravigliosi punti panoramici della città è costituito da Piazzale Castel San Pietro, in cima alla collina che si eleva alle spalle del Teatro Romano, a soli 2 passi dal centro! Qui è possibile osservare
+               la città di Verona da un'angolazione unica.</p>
+    </div>
+    <div class="image">
+        <img src="immagini/funicolare.jpg" style="width:100%;min-height:200px">
+    </div>
+</section>
+  </section>
+</br>
+</br>
+
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+<h2>Cosa si può osservare</h2>
+<p> Il Parco di Castel San Pietro, infatti, è il luogo perfetto per chi cerca una vista panoramica immerso nel verde. Dalla Terrazza panoramica è possibile ammirare il corso dell’Adige che scorre sotto Ponte Pietra, la Chiesa di Santo Stefano e il centro storico,
+  con i suoi campanili e le sue architetture di ogni epoca.</p> 
+</div>
+</section>
+
+<div class="image">
+<img src="immagini/panoramanotte.jpg" style="width:100%;min-height:200px">
+</div>
+</div>
+</div>
+</br>
+</br>
+</br>
+<div class="footer">
+  <p>Copyright 2024 Visita Verona | Tutti i diritti riservati</p>
+</div> 
+</body>
+</html>
