@@ -156,11 +156,13 @@ body {
   <div id="cookie-popup" class="cookie-popup">
     <div class="cookie-content">
         <p>Questo sito utilizza i cookie per garantire la migliore esperienza possibile. Clicca su "Accetta" per consentire l'uso dei cookie.</p>
-        <button id="accept-cookies">Accetta</button>
+        <button class="accept-cookies" id="accept-cookies">Accetta</button>
     </div>
 </div>
 <script src="script.js"></script>
 <script>
+var acceptCookiesBtn = document.querySelector('.accept-cookies');
+
 document.addEventListener("DOMContentLoaded", function() {
     var cookiePopup = document.getElementById('cookie-popup');
     var acceptCookiesBtn = document.getElementById('accept-cookies');
