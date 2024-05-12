@@ -85,40 +85,6 @@ body {
         padding: 0;
       }
 
-      .cookie-popup {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    z-index: 9999;
-}
-
-.cookie-content {
-    text-align: center;
-}
-
-.cookie-popup p {
-    margin-bottom: 10px;
-}
-
-#accept-cookies {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-#accept-cookies:hover {
-    background-color: #0056b3;
-}
-
 .container {
         max-width: 800px;
         margin: 20px auto;
@@ -153,47 +119,6 @@ body {
 <link rel="icon" href="immagini/logo.jpg"/>
 </head>
 <body>
-  <div id="cookie-popup" class="cookie-popup">
-    <div class="cookie-content">
-        <p>Questo sito utilizza i cookie per garantire la migliore esperienza possibile. Clicca su "Accetta" per consentire l'uso dei cookie.</p>
-        <button class="accept-cookies" id="accept-cookies">Accetta</button>
-    </div>
-</div>
-<script src="script.js"></script>
-<script>
-var acceptCookiesBtn = document.querySelector('.accept-cookies');
-
-document.addEventListener("DOMContentLoaded", function() {
-    var cookiePopup = document.getElementById('cookie-popup');
-    var acceptCookiesBtn = document.getElementById('accept-cookies');
-    
-    // Controlla se l'utente ha già accettato i cookie
-    if (!getCookie('cookiesAccepted')) {
-        // Mostra il popup se non ha ancora accettato i cookie
-        cookiePopup.style.display = 'block';
-    }
-    
-    // Aggiungi un gestore di eventi al pulsante "Accetta"
-    acceptCookiesBtn.addEventListener('click', function() {
-        // Imposta un cookie per registrare il consenso dell'utente
-        document.cookie = 'cookiesAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
-        // Nascondi il popup
-        cookiePopup.style.display = 'none';
-    });
-    
-    // Funzione per ottenere il valore di un cookie
-    function getCookie(name) {
-        var cookies = document.cookie.split(';');
-        for (var i = 0; i < cookies.length; i++) {
-            var cookie = cookies[i].trim();
-            if (cookie.indexOf(name) === 0) {
-                return cookie.substring(name.length + 1);
-            }
-        }
-        return null;
-    }
-});
-</script>
   <ul class="navbar">
     <li><a class="#active" href="index.html">Home</a></li>
 
